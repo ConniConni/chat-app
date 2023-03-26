@@ -6,31 +6,7 @@
 </div>
 
 <div class="messages">
-  <div class="upper-mssage">
-    Tom
-  </div>
-  <div class="message-date">
-    2020/3/31(Wed) 12:43:30
-  </div>
-  <div class="lower-message">
-    <div class="message-content">
-      おはよう
-    </div>
-  </div>
-</div>
-
-<div class="messages">
-  <div class="upper-mssage">
-    Tom
-  </div>
-   <div class="message-date">
-    2020/3/31(Wed) 12:47:30
-  </div>
-  <div class="lower-message">
-    <div class="message-content">
-      こんばんは
-    </div>
-  </div>
+  <%= render partial: 'messages' ,collection: @messages%>
 </div>
 
 <%= form_with model: [@room, @message], class: 'form', local: true do |f| %>
