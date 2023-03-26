@@ -7,14 +7,11 @@
 </div>
 
 <div class="rooms">
+ <% current_user.rooms.each do |room| %>
   <div class="room">
     <div class="room-name">
-      <a href="#">techroom1</a>
+      <%= link_to "チャットを作成する", new_room_path %>
     </div>
   </div>
-  <div class="room">
-    <div class="room-name">
-      <a href="#">techroom2</a>
-    </div>
-  </div>
+ <% end %>
 </div>
